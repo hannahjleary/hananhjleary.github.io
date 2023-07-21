@@ -298,7 +298,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
+<<<<<<< HEAD
 			color: #cb5252 !important;
+=======
+			color: #18bfef !important;
+>>>>>>> 514f31d8542f17b639332a93012c1bb9779ed25d
 		}
 
 	strong, b {
@@ -2676,6 +2680,7 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
+<<<<<<< HEAD
 /* Video */
 
 .video {
@@ -2766,6 +2771,8 @@ a.video {
 		transform: scale(1.05);
 	}
 
+=======
+>>>>>>> 514f31d8542f17b639332a93012c1bb9779ed25d
 /* Actions */
 
 	ul.actions {
