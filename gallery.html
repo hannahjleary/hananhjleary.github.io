@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/videos.css" />
 	</head>
 	<body class="is-preload">
 
@@ -40,66 +41,56 @@
 				<!-- Main -->
 					<div id="main">
 
-						<div>
+						<div class="container">
+							<h1>Adiabatic 100 km/s Wind <br /></h1>
+							
+							<div class="video-container">
+								<div class="video"><video src="videos/1_dslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/1_Tslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/1_vslices.mp4" muted></video></div>
+							</div>
 
-							<video width = 30%>
-								<source src="videos/1_dslices.mp4"></source>
-							</video>
+							<h1>Adiabatic 1000 km/s Wind </h1>
 
-							<video width="30%">
-								<source src="videos/1_Tslices.mp4"></source>
-							</video>
+							<div class="video-container">
+								<div class="video"><video src="videos/2_dslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/2_Tslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/2_vslices.mp4" muted></video></div>
+							</div>
 
-							<video width="30%">
-								<source src="videos/1_vslices.mp4"></source>
-							</video>
+							<h1>Cooling 100 km/s Wind </h1>
 
+							<div class="video-container">
+								<div class="video"><video src="videos/3_dslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/3_Tslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/3_vslices.mp4" muted></video></div>
+							</div>
+
+							<h1>Cooling 1000 km/s Wind </h1>
+
+							<div class="video-container">
+								<div class="video"><video src="videos/4_dslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/4_Tslices.mp4" muted></video></div>
+								<div class="video"><video src="videos/4_vslices.mp4" muted></video></div>
+							</div>
+
+							<div class="popup-video">
+								<span>&times;</span>
+								<video src="videos/1_dslices.mp4" muted controls autoplay></video>
+							</div>
 						</div>
-						<div>
 
-							<video width = 30%>
-								<source src="videos/2_dslices.mp4"></source>
-							</video>
-
-							<video width="30%">
-								<source src="videos/2_Tslices.mp4"></source>
-							</video>
-
-							<video width="30%">
-								<source src="videos/2_vslices.mp4"></source>
-							</video>
-
-						</div>
-						<div>
-
-							<video width = 30%>
-								<source src="videos/3_dslices.mp4"></source>
-							</video>
-
-							<video width="30%">
-								<source src="videos/3_Tslices.mp4"></source>
-							</video>
-
-							<video width="30%">
-								<source src="videos/3_vslices.mp4"></source>
-							</video>
-
-						</div>
-						<div>
-
-							<video width = 30%>
-								<source src="videos/4_dslices.mp4"></source>
-							</video>
-
-							<video width="30%">
-								<source src="videos/4_Tslices.mp4"></source>
-							</video>
-
-							<video width="30%">
-								<source src="videos/4_vslices.mp4"></source>
-							</video>
-
-						</div>
+						<script>
+							document.querySelectorAll('.video-container video').forEach(vid => {
+								vid.onclick = () =>{
+									document.querySelector('.popup-video').style.display = 'block';
+									document.querySelector('.popup-video video').src = vid.getAttribute('src');
+								}
+							});
+							document.querySelector('.popup-video span').onclick = () =>{
+								document.querySelector('.popup-video').style.display = 'none';
+							}
+						</script>
 
 					</div>
 

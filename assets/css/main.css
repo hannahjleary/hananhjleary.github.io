@@ -2680,7 +2680,6 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
-<<<<<<< HEAD
 /* Video */
 
 .video {
@@ -2771,8 +2770,6 @@ a.video {
 		transform: scale(1.05);
 	}
 
-=======
->>>>>>> 514f31d8542f17b639332a93012c1bb9779ed25d
 /* Actions */
 
 	ul.actions {
@@ -4050,7 +4047,7 @@ a.video {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
+		background-color: #1e252d;;
 		color: #909498;
 		cursor: default;
 		position: relative;
@@ -4317,7 +4314,7 @@ a.video {
 
 				#footer > section.split > section {
 					padding: 3rem 4rem 1rem 4rem ;
-					border-top: solid 2px #e2e2e2;
+					border-top: solid 2px #717981;
 				}
 
 					#footer > section.split > section:first-child {
