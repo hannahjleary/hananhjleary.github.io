@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #5b5360;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -4047,7 +4047,7 @@ a.video {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #1e252d;;
+		background: rgba(255, 255, 255, 0.175);
 		color: #909498;
 		cursor: default;
 		position: relative;
