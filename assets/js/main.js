@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
@@ -256,7 +255,6 @@
 
 		}
 
-=======
 /*
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
@@ -514,5 +512,4 @@
 
 		}
 
->>>>>>> 514f31d8542f17b639332a93012c1bb9779ed25d
 })(jQuery);
