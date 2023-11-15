@@ -24,8 +24,10 @@
 
 .container .video-container .video{
     display:block;
-    height:375px;
-    width:285px;
+    /* height:375px; */
+    /* width:285px; */
+    height: 100%;
+    width: 30%;
     /* border:5px solid #fff; */
     /* border-radius: 5px; */
     box-shadow: 0 5px 15px rgba(0,0,0,.7);
@@ -35,8 +37,8 @@
 
 .container .video-container .video.tall{
     display:block;
-    height:450px;
-    width:250px;
+    height:100%;
+    width:30%;
     /* border:5px solid #fff; */
     /* border-radius: 5px; */
     box-shadow: 0 5px 15px rgba(0,0,0,.7);
@@ -96,12 +98,15 @@
     cursor: pointer;
 }
 
-@media (max-width:500px){
-    .container .video-container video{
-        width: 20%;
+@media (max-width: 500px) {
+    .container .video-container .video {
+        width: 100%;
     }
-    .container .popup-video video{
-        width:85%;
+    .container .video-container .video.tall {
+        width: 100%;
+    }
+    .container .popup-video video {
+        width: 100%;
     }
 }
 
