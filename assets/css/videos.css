@@ -112,10 +112,8 @@
     .container .popup-video video {
         width: 80%;
     }
-    .container h1{
-        font-size: 12px;
-    }
 }
+
 
 .container .video-container .break {
     flex-basis: 100%;
