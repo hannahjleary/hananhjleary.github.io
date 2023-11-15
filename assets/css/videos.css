@@ -97,8 +97,8 @@
 }
 
 @media (max-width:500px){
-    .container .video-container{
-        width: 75%;
+    .container .video-container video{
+        width: 20%;
     }
     .container .popup-video video{
         width:85%;
