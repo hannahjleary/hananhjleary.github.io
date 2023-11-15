@@ -57,10 +57,11 @@
     display: block;
     /* margin: auto; */
     width: 100%;
-    margin-left: 37.5%;
+    /* margin-left: 37.5%; */
     margin-bottom: 20px;
     font-size: 18px;
-    color: #fff
+    color: #fff;
+    text-align: center;
 }
 
 .container .video-container .video:hover video{
@@ -99,18 +100,20 @@
 }
 
 @media (max-width: 500px) {
+    .container .video-container{
+        width: 100%;
+    }
     .container .video-container .video {
-        width: 10%;
+        width: 25%;
     }
     .container .video-container .video.tall {
-        width: 10%;
+        width: 25%;
     }
     .container .popup-video video {
-        width: 100%;
+        width: 80%;
     }
     .container h1{
         font-size: 12px;
-        width:100%
     }
 }
 
