@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://kit.fontawesome.com/0695dff48e.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/css/gallery.css" />
 	</head>
 	<body class="is-preload">
 
@@ -30,9 +32,8 @@
 							<li class="active"><a href="research.html">Research</a></li>
 						</ul>
 						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/hannahjleary/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="mailto:hjl28@pitt.edu"><i class="fa-solid fa-envelope"></i></a></li>
 							<li><a href="https://github.com/hannahjleary" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
@@ -44,22 +45,96 @@
 							<section class="post">
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
-									<h1>Research Overview</h1>
-									<p>Galactic winds are very important for enriching the metallicity of the circumgalactic medium (CGM) and for regulating the star formation rates of the galaxy. These winds are observed to be multiphase, consisting of gas at a wide range of densities and temperatures. These winds can be moving at speeds of thousands of km/s. The majority of the wind’s volume is made up of hot, ionized gas (about 10^7 K) and the majority of the mass is made up of cold clumps of gas (10^4 K). What’s interesting is that the cold gas is observed to be comoving with the wind.
-									<br /><br />Modeling the acceleration of the cold gas in galactic winds has raised many challenges. Computer simulations in the past have ended with the cold phase of gas heating up and getting destroyed rather than accelerated and entrained. This is caused by hydrodynamic instabilities like the Kelvin-Helmholtz (KH) and Rayleigh-Taylor instabilities. Cosmological simulations are incapable of resolving these small-scale properties.
-									<br /><br />More recently, however, researchers have had success in modeling the acceleration of the cool clouds with the implementation of radiative cooling. At the small scale, the KH instability will create mixing in the shear layer between the cloud and wind, and this mixing layer will have an intermediate temperature. Radiative cooling is most efficient at this intermediate temperature, so this mixing layer cools down and accretes onto the cloud. With this model, cool clouds can actually grow and reach the velocity of the background wind, becoming entrained. This model has been very successful, but it has not been explored in high resolutions due to the simulations being very computationally expensive. 
-									<br /><br />These simulations consist of a three dimensional box with a number of cells in the x, y, and z directions. As you increase the resolution, you increase the number of cells of the cloud and of the mixing layer. A better resolved mixing layer could lead to faster mixing and cooling. The effectiveness of the radiative cooling model may be dependent on the resolution of the simulation. My research aims to quantify this relationship by examining the velocities of the clouds at different resolutions. </p>
-										<!-- <span class="date">April 25, 2017</span> -->
-									<h2><a href="#">Gallery</h2>
-									<p>All of my simulation movies and plots in one place</p>
+									<h1>The Resolution Dependence of Cloud-Wind Simulations</h1>
 								</header>
-									<a href="#" class="image main"><img src="images/cw.jpeg" alt="" /></a>
+									<h2>Background</h2>
+
+									<p>Galactic winds are very important for enriching the metallicity of the circumgalactic 
+										medium (CGM) and for regulating the star formation rates of the galaxy. These winds are 
+										observed to be multiphase, consisting of gas at a wide range of densities and temperatures. 
+										These winds can be moving at speeds of hundreds of km/s. The majority of the wind’s volume is 
+										made up of hot, ionized gas (about 10^7 K) and the majority of the mass is made up of cold 
+										clumps of gas (10^4 K). What has been of interest to astronomers is how the cool
+										clouds accelerate to become comoving with the wind.</p>
+									<p>Modeling the interaction between a cool cloud and a hot, fast wind has historically 
+										faced challenges. Computer simulations in the past have ended with the cold phase of gas heating up and 
+										getting destroyed rather than accelerated and entrained in the wind. This is caused by hydrodynamic 
+										instabilities like the Kelvin-Helmholtz (KH) and Rayleigh-Taylor instabilities. 
+										Cosmological simulations are incapable of resolving these small-scale processes.</p>
+									<p>More recently, however, researchers have had success in modeling the acceleration of the 
+										clouds with the implementation of radiative cooling. At the small scale, the KH 
+										instability will cause mixing to occur in the shear layer between the cloud and wind, and this 
+										mixing layer will have an intermediate temperature. Radiative cooling is most efficient at this 
+										intermediate temperature, so the mixing layer's mass cools and accretes onto the cloud. With this 
+										model, cool clouds can actually grow in mass and reach the velocity of the background wind, becoming 
+										entrained.</p>
+									<div class="container">	
+										<div class="video-container">
+											<center>
+											<div class="video small" ><video src="videos/compare100.mp4" muted autoplay loop></video></div>
+											</center>
+										</div>
+									<p>This model has been very successful, but has not been explored at high resolutions 
+										due to the simulations being very computationally expensive.
+										These simulations consist of a three dimensional box with a fixed number of cells in the x, y, and z 
+										directions. As you increase the resolution, you increase the number of cells spanning
+										the cloud and mixing layer. A better resolved mixing layer could lead to faster 
+										mixing and cooling. Therefore, the
+										effectiveness of the radiative cooling model may be dependent on the resolution of the simulation. 
+										</p>
+									<h2>Project Overview</h2>
+									<p>My research aims to quantify this relationship between the resolution of the 
+										simulaions and the cloud's acceleration and survival. Determining possible 
+										effects of resolution will help decide if this mixing and cooling model is sufficient 
+										for modeling cool cloud acceleration in galactic winds, or if other physical
+										mechanisms such as cosmic rays or magnetic fields is necessary. 
+										In order to study this relationship, I run cloud-wind simulations on 
+										GPU nodes on the CRC supercomputer using 
+										<a href="https://github.com/cholla-hydro/cholla" >Cholla</a>. Cholla is a 
+										GPU-based hydrodynamics code that is massively parallel, so it is able to efficiently 
+										run very high resolution simulations. 
+									</p>
+									<div class="col-container">
+										<div class="left-column">
+											<p>In this adiabatic (no radiative cooling) simulation, there is a clear trend
+												involving resolution. The middle resolution (16 cells per cloud radius)
+												lags behind the others and gets destroyed slower. This result is reversed
+												when increasing the wind speed to a supersonic speed. This specific 
+												resolution seems to be significant for simulations with cooling as well,
+												however a longer period of time is necessary to track the cloud's survival.
+											
+											</p>
+											<p>Because the cooling rate is dependent on temperature, we are exploring
+												how this resolution dependence varies with different intial temperatures.
+												If a cloud were to immediately cool and shrink in size, it would have a lower
+												effective resolution, altering its outcome. We are also still investigating
+												the effects of a subsonic wind versus a supersonic wind. 
+											</p>
+										</div>
+										<div class = "right-column">
+											<div class="video"><video src="videos/1_Tslices.mp4" muted autoplay loop width=300></video></div>
+										</div>
+									</div>
+
+							<ul class="actions special">
+								<li><a href="gallery.html" class="button large">Simulation Gallery</a></li>
+							</ul> 
+
+							</section>
+
+							<!-- <section class="post">
+								<header class="major">
+									<h2><a href="#">Gallery</h2>
+								</header>
+									<p>All of my simulation movies and plots in one place</p>
+								 </header> -->
+									<!-- <a href="#" class="image main"><img src="images/cw.jpeg" alt="" /></a>
 									<ul class="actions special">
 										<li><a href="gallery.html" class="button large">See More</a></li>
-									</ul>
-								</article>
+									</ul> -->
+								<!-- </article> -->
 								<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
-								</section>
+							<!-- </section> -->
 
 
 							<!-- Posts -->
@@ -80,25 +155,11 @@
 
 				<!-- Footer -->
 				<footer id="footer">
-					<section class="split contact">
-						<section>
-							<h3>Phone</h3>
-							<p><a href="#">(570) 899-6061</a></p>
-						</section>
-						<section>
-							<h3>Email</h3>
-							<p><a href="#">hjl28@pitt.edu</a></p>
-						</section>
-						<section>
-							<h3>Social</h3>
-							<ul class="icons alt">
-								<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-f"><span class="label">Facebook</span></a></li> -->
-								<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
-								<li><a href="https://github.com/hannahjleary" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-					</section>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/hannahjleary/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="mailto:hjl28@pitt.edu"><i class="fa-solid fa-envelope"></i></a></li>
+						<li><a href="https://github.com/hannahjleary" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
 				</footer>
 
 				<!-- Copyright -->
