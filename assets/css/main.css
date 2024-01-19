@@ -301,11 +301,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-<<<<<<< HEAD
-			color: #cb5252 !important;
-=======
 			color: #18bfef !important;
->>>>>>> 514f31d8542f17b639332a93012c1bb9779ed25d
 		}
 
 	strong, b {
@@ -3691,21 +3687,19 @@ a.video {
 
 			#header {
 				height: 14rem;
-				padding-bottom: 4rem;
+				/* padding-bottom: 4rem; */
 			}
 
 		}
 
 		@media screen and (max-width: 736px) {
 
-			#header {
-				padding-bottom: 3rem;
-			}
+			
 
-				#header .logo {
-					font-size: 1.75rem;
-					border-width: 3px !important;
-				}
+			#header .logo {
+				font-size: 1.75rem;
+				border-width: 3px !important;
+			}
 
 		}
 
@@ -3850,11 +3844,33 @@ a.video {
 			flex-shrink: 0;
 			margin-bottom: 0;
 		}
-
 		@media screen and (max-width: 980px) {
 
 			#nav {
-				display: none;
+				display: block;
+			}
+
+				#nav ul.links {
+					font-weight: 700;
+				}
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#nav > section {
+				padding: 2rem 2rem 0.1rem 2rem ;
+				/* margin: 0; */
+			}
+
+				
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#nav {
+				width: 100%;
+				/* margin: 0 auto; */
 			}
 
 		}

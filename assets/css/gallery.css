@@ -210,3 +210,38 @@
     margin-bottom: -2rem;
     margin-top: 0.4rem;
 }
+
+/* @media screen and (max-width: 980px) {
+
+    #nav {
+        display: block;
+    }
+
+        #nav ul.links {
+            font-weight: 700;
+        }
+} */
+
+@media screen and (max-width: 736px) {
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .text {
+        font-size: smaller;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .text {
+        font-size: smaller;
+    }
+
+}
