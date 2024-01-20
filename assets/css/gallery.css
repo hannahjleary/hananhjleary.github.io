@@ -114,12 +114,13 @@
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .container .video-container{
         width: 100%;
     }
     .container .video-container .video {
-        width: 25%;
+        height: auto;
+        width: 100%;
     }
     .container .video-container .video.tall {
         width: 25%;
